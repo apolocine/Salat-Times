@@ -18,7 +18,7 @@ Cette application web progressive (PWA) permet de consulter les horaires de pri�
 
 ### Sur smartphone ou tablette
 
-1. Ouvrez l'application dans votre navigateur à l'adresse : `https://votre-site.com/salat-times/`
+1. Ouvrez l'application dans votre navigateur à l'adresse : `https://salat.amia.fr/`
 2. Pour iOS (Safari) :
    - Appuyez sur l'icône de partage (rectangle avec une flèche vers le haut)
    - Faites défiler et appuyez sur "Sur l'écran d'accueil"
@@ -70,7 +70,6 @@ Pour toute question ou suggestion, veuillez contacter :
 
 - Email : support@amia.fr
 - Site web : https://salat.amia.fr
-- Site web : https://salat-times.com
 
 ---
 
