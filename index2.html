@@ -78,8 +78,8 @@
         <div class="action-buttons">
             <button id="install-btn" style="display:none;">
 				  📲 Installer Salat Times
-				</button> 
-				
+				</button>
+			
 			<button class="action-button" id="add-to-lockscreen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
@@ -114,82 +114,13 @@
 
     <!-- Script JavaScript -->
 	
-<div id="install-toast" style="
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #4A6741;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  font-family: sans-serif;
-  z-index: 9999;
-">
-  📲 Application ajoutée à l'écran d'accueil !
-</div>
- 
-
-	<!-- Bannière d'installation PWA -->
-<div id="install-banner" style="
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background: #4A6741;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  z-index: 9999;
-  font-family: sans-serif;
-  transition: transform 0.3s ease;
-">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <strong>Salat Times</strong><br>
-      Ajouter cette app à votre écran d'accueil ?
-    </div>
-    <div>
-      <button id="install-confirm" style="
-        background: white;
-        color: #4A6741;
-        border: none;
-        padding: 10px 14px;
-        border-radius: 8px;
-        font-weight: bold;
-        cursor: pointer;
-        margin-left: 10px;
-      ">Oui</button>
-	  <button id="install-cancel" style="
-        background: white;
-        color: #4A6741;
-        border: none;
-        padding: 10px 14px;
-        border-radius: 8px;
-        font-weight: bold;
-        cursor: pointer;
-        margin-left: 10px;
-      ">Non</button>
-      <button id="install-cancel_" style="
-        background: transparent;
-        color: white;
-        border: none;
-        font-size: 20px;
-        margin-left: 5px;
-        cursor: pointer;
-      ">&times;</button>
-    </div>
-  </div>
-</div>
 <canvas id="lockscreenCanvas" width="1080" height="1920" style="display:none;"></canvas>
 
  <script src="js/PrayerTimes.js" defer></script>
 <script src="js/Getimage.js" defer></script>
 <script src="js/PrayerInfo.js" defer></script>
-  <script src="js/DeferredPromp.js" defer></script>
+ 
+ 
+
 </body>
 </html>
