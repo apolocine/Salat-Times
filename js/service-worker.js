@@ -253,9 +253,12 @@ async function fetchPrayerTimes(latitude, longitude) {
     const today = new Date();
     const month = today.getMonth() + 1;
     const year = today.getFullYear();
-    
+              // const apiUrl = `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=${latitude}&longitude=${longitude}&method=2`;
+                    // Par:
+                    const apiUrl = `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=${latitude}&longitude=${longitude}&method=${currentCalculationMethod}`;
+                
     // Requête à l'API Aladhan
-    const response = await fetch(`https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=${latitude}&longitude=${longitude}&method=2`);
+    const response = await fetch(apiUrl);
     const data = await response.json();
     
     if (data.code === 200 && data.data) {
