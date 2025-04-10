@@ -1,0 +1,30 @@
+   /* Carte pour le sélecteur de méthode de calcul */
+   .method-selector-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculation-method-select {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin-left: 1rem;
+    max-width: 80%;
+}
+
+/* Mode sombre pour le sélecteur */
+@media (prefers-color-scheme: dark) {
+    .calculation-method-select {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+}

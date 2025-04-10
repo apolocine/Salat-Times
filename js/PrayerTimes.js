@@ -391,8 +391,12 @@
                     throw new Error('L\'API Fetch n\'est pas prise en charge par ce navigateur');
                 }   
 
+                // const apiUrl = `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=${latitude}&longitude=${longitude}&method=2`;
+                    // Par:
+                const apiUrl = `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=${latitude}&longitude=${longitude}&method=${currentCalculationMethod}`;
+                    
                 // Utilisation de l'API Aladhan pour obtenir les horaires de prière
-                const response = await fetch(`https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=${latitude}&longitude=${longitude}&method=2`);
+                const response = await fetch(apiUrl);
                 const data = await response.json();
                 
                 console.log('Données des horaires de prière:', data);

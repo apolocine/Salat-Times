@@ -13,6 +13,7 @@
     
     <!-- Styles CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/select-algo-styles.css">
 </head>
 <body>
 
@@ -53,6 +54,33 @@
             </button>
         </div>
       
+
+
+        <div class="method-selector-card">
+          <label for="calculation-method">Méthode de calcul:</label>
+          <select id="calculation-method" class="calculation-method-select">
+              <option value="0">Université islamique de Karachi</option>
+              <option value="1">Ligue islamique mondiale</option>
+              <option value="2" selected>Société islamique d'Amérique du Nord (ISNA)</option>
+              <option value="3">Union islamique mondiale</option>
+              <option value="4">Université Umm Al-Qura, La Mecque</option>
+              <option value="5">Autorité générale des relevés égyptiens</option>
+              <option value="7">Institut de Géophysique, Université de Téhéran</option>
+              <option value="8">Région du Golfe</option>
+              <option value="9">Koweït</option>
+              <option value="10">Qatar</option>
+              <option value="11">Majlis Ugama Islam Singapura (Singapour)</option>
+              <option value="12">Union des Organisations Islamiques de France (UOIF)</option>
+              <option value="13">Diyanet İşleri Başkanlığı (Turquie)</option>
+              <option value="14">Administration spirituelle des musulmans de Russie</option>
+              <option value="15">Comité mondial d'observation de la lune</option>
+              <option value="16">Dubaï (UAE)</option>
+              <option value="17">Algérie</option>
+              <option value="18">Tunisie</option>
+              <option value="19">Maroc</option>
+          </select>
+      </div>
+
 
         <!-- Carte d'affichage de l'heure 
         <div class="time-card">
@@ -113,23 +141,6 @@
     </footer>
 
     <!-- Script JavaScript -->
-	
-<div id="install-toast" style="
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #4A6741;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  font-family: sans-serif;
-  z-index: 9999;
-">
-  📲 Application ajoutée à l'écran d'accueil !
-</div>
  
 
 	<!-- Bannière d'installation PWA -->
@@ -187,6 +198,7 @@
 </div>
 <canvas id="lockscreenCanvas" width="1080" height="1920" style="display:none;"></canvas>
 
+<script src="js/AlgoTimesSelector.js" defer></script>
  <script src="js/PrayerTimes.js" defer></script>
 <script src="js/Getimage.js" defer></script>
 <script src="js/PrayerInfo.js" defer></script>
